@@ -1,5 +1,5 @@
 {
-  "name": "serverless-inspect",
+  "name": "@seek/serverless-plugin-inspect",
   "version": "1.0.0",
   "description": "Get stack info in JSON format",
   "main": "dist/index.js",
