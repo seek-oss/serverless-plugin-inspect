@@ -4,6 +4,7 @@
   "description": "Get stack info in JSON format",
   "main": "dist/index.js",
   "author": "Tristan Straub",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SEEK-Jobs/serverless-plugin-inspect.git"
