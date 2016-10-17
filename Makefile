@@ -18,9 +18,6 @@ dist-clean: clean
 test: node_modules dist
 	./node_modules/.bin/mocha --compilers js:babel-register --reporter $(MOCHA_REPORTER)
 
-deploy: #clean test
-	./node_modules/.bin/serverless deploy
-
 node_modules:
 	npm install
 
