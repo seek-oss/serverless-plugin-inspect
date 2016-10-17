@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-inspect",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Get stack info in JSON format",
   "main": "dist/index.js",
   "author": "Tristan Straub",
