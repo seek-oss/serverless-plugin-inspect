@@ -25,11 +25,16 @@ class Inspect {
     this.hooks = {
       'inspect:inspect': () => {
         return this.validate(serverless).then(() => {
-          const stacks = {};
+          const stackName = this.sdk.getStackName(options.stage);
 
-          stacks[this.sdk.getStackName(options.stage)] = {};
-
-          console.log(JSON.stringify({ stacks }));
+          return this.sdk.request('CloudFormation',
+                                  'describeStacks',
+                                  { StackName: stackName },
+                                  this.options.stage,
+                                  this.options.region)
+                     .then(output => {
+                       console.log(JSON.stringify({ Stacks: output.Stacks }, null, 2));
+                     });
         });
       }
     };
