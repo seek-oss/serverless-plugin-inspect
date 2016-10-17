@@ -32,4 +32,7 @@ dist: node_modules $(wildcard src/*.js) package.json
 	./node_modules/.bin/babel src -d dist
 
 publish: clean dist
+	git checkout master
 	npm version patch
+	git push origin master
+	npm publish
