@@ -1,6 +1,6 @@
 {
   "name": "@seek/serverless-plugin-inspect",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Get stack info in JSON format",
   "main": "dist/index.js",
   "author": "Tristan Straub",
