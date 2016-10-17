@@ -25,11 +25,11 @@ class Inspect {
     this.hooks = {
       'inspect:inspect': () => {
         return this.validate(serverless).then(() => {
-          const stack = {
-            name: this.sdk.getStackName(options.stage)
-          };
+          const stacks = {};
 
-          console.log(JSON.stringify({ stack }));
+          stacks[this.sdk.getStackName(options.stage)] = {};
+
+          console.log(JSON.stringify({ stacks }));
         });
       }
     };
