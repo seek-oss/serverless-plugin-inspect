@@ -1,0 +1,3 @@
+* serverless-plugin-inspect
+
+#+DESCRIPTION: Get AWS stack info in JSON
