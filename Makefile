@@ -21,8 +21,6 @@ test: node_modules dist
 deploy: #clean test
 	./node_modules/.bin/serverless deploy
 
-build: dist
-
 node_modules:
 	npm install
 
@@ -33,3 +31,7 @@ dist: node_modules $(wildcard src/*.js) package.json
 	./node_modules/.bin/eslint test
 	./node_modules/.bin/babel src -d dist
 	cp package.json dist/
+
+publish: clean dist
+	npm version patch
+	cd dist;
