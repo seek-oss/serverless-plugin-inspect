@@ -30,8 +30,6 @@ dist: node_modules $(wildcard src/*.js) package.json
 	./node_modules/.bin/eslint src
 	./node_modules/.bin/eslint test
 	./node_modules/.bin/babel src -d dist
-	cp package.json dist/
 
 publish: clean dist
 	npm version patch
-	cd dist;
