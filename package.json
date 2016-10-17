@@ -2,12 +2,12 @@
   "name": "@seek/serverless-plugin-inspect",
   "version": "0.0.2",
   "description": "Get stack info in JSON format",
-  "main": "dist/index.js",
+  "main": "index.js",
   "author": "Tristan Straub",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SEEK-Jobs/serverless-plugin-inspect.git"
-  }
+  },
   "dependencies": {
     "bluebird": "3.4.6",
     "serverless": "1.0.2"

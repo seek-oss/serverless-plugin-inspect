@@ -1,6 +1,3 @@
-'use strict';
-
-import Promise from 'bluebird';
 import SDK from 'serverless/lib/plugins/aws';
 import validate from 'serverless/lib/plugins/aws/lib/validate';
 

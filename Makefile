@@ -26,15 +26,10 @@ build: dist
 node_modules:
 	npm install
 
-
-compile: node_modules
+dist: node_modules $(wildcard src/*.js) package.json
+	mkdir -p dist
 	./node_modules/.bin/npm-lint-locked
 	./node_modules/.bin/eslint src
 	./node_modules/.bin/eslint test
 	./node_modules/.bin/babel src -d dist
-
-dist: node_modules package.json $(wildcard src/*.js)
-	mkdir -p dist
-	./node_modules/.bin/babel src -d dist
 	cp package.json dist/
-	cd dist/; npm install --production; rm package.json
