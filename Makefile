@@ -35,4 +35,5 @@ publish: clean dist
 	git checkout master
 	npm version patch
 	git push origin master
+	git push --tags origin master
 	npm publish
