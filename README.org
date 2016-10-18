@@ -1,3 +1,55 @@
 * serverless-plugin-inspect
 
 Get AWS stack info in JSON
+
+Run:
+
+#+BEGIN_SRC sh
+sls inspect
+#+END_SRC
+
+Returns:
+
+#+BEGIN_SRC json
+{
+  "Stacks": [
+    {
+      "StackId": "...",
+      "StackName": "...",
+      "Description": "...",
+      "Parameters": [],
+      "CreationTime": "...",
+      "LastUpdatedTime": "...",
+      "StackStatus": "...",
+      "DisableRollback": false,
+      "NotificationARNs": [],
+      "Capabilities": [
+        "CAPABILITY_IAM"
+      ],
+      "Outputs": [
+        {
+          "OutputKey": "...",
+          "OutputValue": "...",
+          "Description": "..."
+        },
+        {
+          "OutputKey": "...",
+          "OutputValue": "...",
+          "Description": "..."
+        },
+        {
+          "OutputKey": "...",
+          "OutputValue": "..."
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "...",
+          "Value": "..."
+        }
+      ]
+    }
+  ]
+}
+
+#+END_SRC
