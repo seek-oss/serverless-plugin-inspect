@@ -1,4 +1,4 @@
-* serverless-plugin-inspect
+# serverless-plugin-inspect
 
 > ⚠️ This plugin is no longer maintained. You are advised to fork this repository rather than relying on the unmaintained npm package.
 
