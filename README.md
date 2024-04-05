@@ -6,13 +6,13 @@ Get AWS stack info in JSON
 
 Run:
 
-#+BEGIN_SRC sh
+```sh
 sls inspect
-#+END_SRC
+```
 
 Returns:
 
-#+BEGIN_SRC json
+```json
 {
   "Stacks": [
     {
@@ -53,5 +53,4 @@ Returns:
     }
   ]
 }
-
-#+END_SRC
+```
